@@ -2,7 +2,7 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-import sh_pointlist_pb2 as sh__pointlist__pb2
+from . import sh_pointlist_pb2 as sh__pointlist__pb2
 
 
 class SmokyHumansStub(object):
