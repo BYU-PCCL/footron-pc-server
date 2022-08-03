@@ -1,4 +1,4 @@
-
+from pathlib import Path
 from concurrent import futures
 import logging
 import time
@@ -21,7 +21,7 @@ from . import sh_pointlist_pb2_grpc
 DTYPE = np.float16
 PT_COUNT = 100000
 KNOWN_SENSORS = None
-XFORM_FN = "./data/transform_data.json"
+XFORM_FN = Path(__file__).parent / "data/transform_data.json"
 verts = {}
 
 #
