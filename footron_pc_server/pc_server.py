@@ -182,6 +182,8 @@ def watch_transforms( name ):
 #
 
 def main():
+    global KNOWN_SENSORS
+    
     KNOWN_SENSORS = load_transformations( XFORM_FN )
     
     x = threading.Thread( target=watch_transforms, args=(1,) )
